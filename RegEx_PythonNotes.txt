@@ -1,0 +1,84 @@
+Introduction
+The RegEx, or Regular Expression is used to check if a string contains the specified search pattern.
+
+Example  import re
+	 txt = 'Hello World'
+	 if re.search('^Hello',txt):
+		print('The given string starts with "Hello".')
+
+The search() Function
+The search() function searches a string for a match
+Returns the match object if there is a match. Otherwise,returns None.
+Only the first occurence of the match will be returned 
+Example import re
+	txt = 'Hello World'
+	print(re.search('\s',txt))
+	
+	Output: 
+	<re.Match object; span=(5,6), match=' '>
+
+The Match Object
+contains information about the successful match of a regular expression against a string
+Example: import re
+	 txt='Hello world!'
+	 print(re.search('\s', txt).span())
+	
+	 Output:
+	 (5, 6)
+
+MetaCharacters
+
+Metacharacters are characters with special meaning
+[] <--- A set of characters  ex. [a-z],[A-Z]
+^  <--- Starts with
+$  <--- Ends with
+
+Special Sequence
+
+A special sequence starts with \ followed by a single character.
+
+\s <-- Returns a match when the string contains a whitespace character
+\S <-- Returns a match when the string DOES NOT contain a whitespace character
+
+\d <-- Returns a match when the string contains digits
+\D <-- Returns a match when the string DOES NOT contain digits 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
